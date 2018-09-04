@@ -1,18 +1,22 @@
 /* Coding challenge of tip calculation*/
 
 
-var bill =[236];
-console.log(tipcalculator (bill));
+bill =[199, 20, 168];
+tipcalculator (bill);
 
 function tipcalculator(bill){
 	if (bill <= 50) {
-		var tipvalue = (bill * 0.20);
+		return bill * 0.20;
 	}
 	else if (bill >50 && bill < 200){
-		var tipvalue = (bill * 0.15);
+		return bill * 0.15;
 	}
 	else {
-		var tipvalue = (bill * 0.10);
+		return bill * 0.10;
 	}
-console.log(tipvalue)
+
 }
+
+console.log(tipcalculator(bill[0])+bill[0]);
+console.log(tipcalculator(bill[1])+bill[1]);
+console.log(tipcalculator(bill[2])+bill[2]);
